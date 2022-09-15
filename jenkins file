@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pull code from SCM') {
+            steps {
+                echo 'code from SCM..'
+            }
+        }
+        stage('Create docker image') {
+            steps {
+                echo 'create docker image..'
+            }
+        }
+        stage('Deploy docker image') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
