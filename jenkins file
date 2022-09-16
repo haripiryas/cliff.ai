@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Pull code from SCM') {
+        stage(Pulling code from git- 'https://github.com/haripiryas/cliff.ai.git') {
             steps {
                 echo 'code from SCM..'
             }
